@@ -6,10 +6,9 @@
 | Id | pk | auto increment; not null; unique | Первичный ключ |
 | UserName | VARCHAR(50) | not null | Имя пользователя |
 | Email | VARCHAR(50) | not null | Эл. почта пользователя |
-| Wallet | fk | not null | Внешний ключ на кошелек пользователя |
 | Cards | fk | - | Внешний ключ на карту
 
-## Card (Перевод)
+## Card (Карта)
 | Имя поля | Тип | Ограничение | Описание 
 |-----------|:-----------:|-----------:|-----------:|  
 | Id | pk | auto increment; not null; unique | Первичный ключ |
