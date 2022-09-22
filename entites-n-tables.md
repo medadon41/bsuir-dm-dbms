@@ -12,6 +12,7 @@
 | Имя поля | Тип | Ограничение | Описание 
 |-----------|:-----------:|-----------:|-----------:|  
 | Id | pk | auto increment; not null; unique | Первичный ключ |
+| OwnerID | fk | not null | Внешний ключ на пользователя |
 | Number | VARCHAR(16) | not null | Номер карты |
 | Month | VARCHAR(2) | not null | Месяц срока действия карты |
 | Year | VARCHAR(4) | not null | Год срока действия карты |
@@ -24,10 +25,6 @@
 | Number | VARCHAR(16) | not null | Номер кошелька |
 | Balance | FLOAT | not null | Текущий баланс кошелька |
 | OwnerID | fk | not null | Внешний ключ на пользователя |
-| DepositID | fk | not null | Внешний ключ на депозиты |
-| WithdrawalID | fk | not null | Внешний ключ на выводы |
-| TransferID | fk | not null | Внешний ключ на переводы |
-| DonationID | fk | not null | Внешний ключ на пожертвования |
 
 ## Transfer (Перевод)
 | Имя поля | Тип | Ограничение | Описание 
