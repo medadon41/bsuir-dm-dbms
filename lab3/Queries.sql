@@ -1,0 +1,28 @@
+SELECT TOP 4 Amount
+FROM Transfers
+
+SELECT * FROM Transfers
+ORDER BY Id
+	OFFSET 2 ROWS
+
+SELECT * FROM Transfers
+ORDER BY Id
+	OFFSET 2 ROWS
+	FETCH NEXT 3 ROWS ONLY;
+
+SELECT * FROM Transfers
+WHERE Amount > 200 
+
+SELECT * FROM Transfers
+WHERE Amount NOT BETWEEN 200 AND 500
+
+SELECT * FROM Users
+WHERE Email LIKE '%gmail%'
+
+SELECT * FROM Wallets
+
+UPDATE Wallets
+SET Balance = 1000
+WHERE OwnerId = 1
+
+SELECT * FROM Wallets
